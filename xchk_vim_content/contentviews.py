@@ -5,5 +5,5 @@ class VimTextEditorView(ContentView):
      
     uid = 'vim_text_editor'
     template = 'xchk_vim_content/vim_text_editor.html'
-    strat = Strategy(refusing_check=TrueCheck()),
+    strat = Strategy(refusing_check=TrueCheck(),
                      accepting_check=Negation(TrueCheck()))
